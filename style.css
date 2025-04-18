@@ -15,6 +15,6 @@
     background-color: #f0f0f0;
   }
 
-.square.hovered {
+.hovered {
     background-color: green;
 }
