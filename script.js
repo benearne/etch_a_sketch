@@ -30,7 +30,16 @@ num_button.addEventListener('click', function() {
             
             // Hover effect 
             square.addEventListener('mouseover', () => {
-                square.style.backgroundColor = selectedColor;
+                let random = Math.floor(Math.random() * 100) / 100
+                if (selectedColor === "red") {
+                    square.style.backgroundColor = `rgba(255, 0, 0, ${random})`;
+                }
+                else if (selectedColor === "green") {
+                    square.style.backgroundColor = `rgba(0, 250, 0, ${random})`;
+                }
+                else if (selectedColor === "blue") {
+                    square.style.backgroundColor = `rgba(0, 0, 250, ${random})`;
+                }
                 });
     }
 
